@@ -31,4 +31,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
   }
+
+  .paginationText {
+    letter-spacing: 1px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 13px;
+  }
 }
