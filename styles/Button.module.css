@@ -1,0 +1,15 @@
+.button {
+  width: 120px;
+  height: 40px;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.button:hover {
+  color: grey;
+}

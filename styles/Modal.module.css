@@ -1,0 +1,100 @@
+.drawer {
+  position: fixed;
+  z-index: 9;
+  width: 42%;
+  height: auto;
+  border: 8px solid white;
+  padding: 16px;
+  top: calc(70% - 300px);
+  box-sizing: border-box;
+  transition: transform 1s;
+  right: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.cancelIcon {
+  text-align: end;
+  cursor: pointer;
+  font-size: 21px;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  text-align: center;
+  align-items: baseline;
+}
+
+.clearFilterButton {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.noCategory {
+  font-size: 0.9vw;
+  line-height: 1.7vw;
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filtersLink {
+  text-align: center;
+  font-size: 0.9vw;
+  line-height: 1.7vw;
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: end;
+  padding-right: 140px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+@media only screen and (max-width: 768px) {
+  .drawer {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: auto;
+    border: 8px solid white;
+    padding: 16px;
+    box-sizing: border-box;
+    transition: transform 1s;
+    background-color: rgb(255, 255, 255);
+    top: 21%;
+    left: 0%;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: baseline;
+  }
+
+  .noCategory {
+    font-size: 2.4vw;
+    line-height: 1.7vw;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .filtersLink {
+    font-size: 2.4vw;
+    line-height: 1.7vw;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}

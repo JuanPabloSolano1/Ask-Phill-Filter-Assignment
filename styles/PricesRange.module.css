@@ -1,0 +1,20 @@
+.priceRange {
+  font-size: 13px;
+  line-height: 40px;
+  color: #666;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.priceContainer {
+  margin-top: 20px;
+}
+
+.priceSlider {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}

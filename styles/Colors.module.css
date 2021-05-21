@@ -1,0 +1,61 @@
+.colorgrid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-size: 13px;
+  line-height: 40px;
+  color: #666;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.color[data-color='black'] {
+  border: none;
+}
+
+.colorSelected {
+  composes: color;
+  position: relative;
+  border-color: black;
+}
+
+.colorSelected:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  background: black;
+  border-radius: 50%;
+}
+
+.colorSelected[data-color='black'],
+.colorSelected[data-color='black']:after,
+.colorSelected[data-color='blue'],
+.colorSelected[data-color='blue']:after {
+  border-color: white;
+  background: white;
+}
+
+.colorSelected[data-color='white'],
+.colorSelected[data-color='white']:after {
+  border-color: black;
+  background: black;
+}

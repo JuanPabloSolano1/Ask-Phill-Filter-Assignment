@@ -1,0 +1,34 @@
+.paginationGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
+  bottom: 0;
+}
+
+.paginationButton {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  border: none;
+}
+
+.paginationText {
+  letter-spacing: 1px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #666;
+}
+
+@media only screen and (max-width: 768px) {
+  .paginationGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+}

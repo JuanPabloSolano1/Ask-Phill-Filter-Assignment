@@ -1,0 +1,16 @@
+.banner {
+  background-image: url('../public/Miista-banner.jpg');
+  height: 25rem;
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.logo {
+  position: absolute;
+  color: white;
+  font-weight: lighter;
+  left: 3%;
+  top: 2%;
+  letter-spacing: 10px;
+}
