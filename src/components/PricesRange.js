@@ -24,7 +24,7 @@ export const PricesRange = (props) => {
           max={allPriceMax}
           step="20"
           value={value}
-          className="range"
+          className={styles.inputRange}
         ></input>
       </div>
       <p className={styles.priceRange}>
