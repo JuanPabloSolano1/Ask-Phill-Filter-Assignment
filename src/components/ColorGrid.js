@@ -24,7 +24,7 @@ export const ColorGrid = (props) => {
     );
   });
   return (
-    <div>
+    <div className={styles.colorsContainer}>
       <h3 className={styles.header}>Colors</h3>
       <div className={styles.colorgrid}>{color}</div>
     </div>

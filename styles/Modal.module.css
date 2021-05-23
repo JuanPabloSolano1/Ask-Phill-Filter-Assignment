@@ -79,7 +79,7 @@
   }
 
   .noCategory {
-    font-size: 2.4vw;
+    font-size: 3.1vw;
     line-height: 1.7vw;
     letter-spacing: 0.1vw;
     text-transform: uppercase;
@@ -96,5 +96,14 @@
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
+  }
+  .categoryFiltered {
+    text-decoration: underline;
+    font-size: 3.1vw;
+    line-height: 1.7vw;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: lighter;
   }
 }
