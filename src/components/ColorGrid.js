@@ -4,12 +4,12 @@ import styles from '../../styles/Colors.module.css';
 export const ColorGrid = (props) => {
   const { availableColors, click, colors } = props;
 
-  const color = availableColors.map((color) => {
+  const color = availableColors.map((color, index) => {
     const style = {
       backgroundColor: color,
     };
     return (
-      <div>
+      <div key={index}>
         <div
           data-color={color.toLowerCase()}
           onClick={click}
