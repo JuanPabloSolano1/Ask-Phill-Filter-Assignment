@@ -65,15 +65,25 @@ export const FiltersModal = (props) => {
         click={colorClick}
         colors={selectedColors}
       />
-      <div
-        className={
-          selectedCategories.length ? styles.categoriesGrid : styles.categories
-        }
-      >
-        <div>
+      <div className={styles.categoriesContainer}>
+        <div
+          className={
+            selectedCategories.length
+              ? styles.categoriesGrid
+              : styles.categories
+          }
+        >
           <h3 className={categoryStyles.header}>Categories</h3>
+          <div
+            className={
+              selectedCategories.length
+                ? styles.renderProducts
+                : styles.renderCaption
+            }
+          >
+            {displaySelectedCategories()}
+          </div>
         </div>
-        {displaySelectedCategories()}
       </div>
       <div>
         <PricesRange

@@ -65,3 +65,21 @@
   border-color: black;
   background: black;
 }
+
+@media only screen and (max-width: 768px) {
+  .colorsContainer {
+    display: block;
+    align-items: baseline;
+  }
+
+  .header {
+    font-size: 13px;
+    line-height: 40px;
+    color: #666;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}

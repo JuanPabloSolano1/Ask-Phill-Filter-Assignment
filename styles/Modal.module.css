@@ -19,9 +19,7 @@
 }
 
 .categoriesGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 0px;
+  display: flex;
   text-align: center;
   align-items: baseline;
 }
@@ -38,6 +36,7 @@
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 600;
+  padding-left: 20px;
 }
 
 .filtersLink {
@@ -53,8 +52,15 @@
 }
 
 .categories {
+  display: flex;
+  align-items: baseline;
+}
+
+.renderProducts {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  padding-left: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -73,8 +79,7 @@
   }
 
   .categories {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: block;
     align-items: baseline;
   }
 
@@ -85,6 +90,7 @@
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 600;
+    text-align: center;
   }
   .filtersLink {
     font-size: 2.4vw;
@@ -105,5 +111,16 @@
     text-transform: uppercase;
     cursor: pointer;
     font-weight: lighter;
+    padding-left: 20px;
+  }
+
+  .categoriesGrid {
+    display: block;
+    text-align: center;
+  }
+
+  .renderProducts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
